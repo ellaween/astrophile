@@ -1,0 +1,704 @@
+*{
+				margin:0;
+				padding: 0;
+}
+html{
+				background:#3568a2;
+				
+
+
+}
+
+.od{
+
+min-height:100vh;
+width:100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/Users/User/Desktop/folder/Berry T/Astronaut/Images/Background.jpg");
+				background-position: center;
+				background-size:cover;
+				position:relative;
+}
+
+
+.nav{
+				display:flex;
+				padding:2% 6%;
+				margin:0 ;
+			/*	flex-direction:row;*/
+				justify-content: space-between;
+				align-items: center;
+}
+.logo{
+ width:250px;
+ margin: 0;
+		}
+		.logolink{
+						width:50px;
+						height: 20px;
+						
+		}
+	.	menu{
+	flex:1;
+	text-align:right;
+					transition:1s;
+	}		
+.menu ul li {
+display: inline-block;
+list-style:none ;
+display:inline-block;
+padding:8px 12px;
+position: relative;
+}
+
+/* li {
+
+ display: block;
+    vertical-align: top;
+    padding:10px;
+} */
+
+.menu ul li a {
+  color: #2bff;
+  text-decoration: none;
+font-size: 20px;
+font-family: "sofia" ,sans-serif ;
+} 
+.nav ul li::after{ 
+content:'';
+			width:0% ;
+			height:2px;
+			background: #1e1580;
+			display:block;
+			margin:auto;
+			transition:0.5s;
+}
+.nav ul li:hover::after{
+width:100%;			}
+.text {
+				width:90% ;
+				color:#2bff ;
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%, -40%);
+				text-align: center;
+}
+.text h1{
+			font-size:66px;	
+}
+.text p{
+text-align:center;
+				margin:10px 0 40px;
+				font-size:10px;
+}
+.dive{
+				display:inline-block;
+				text-decoration:none;
+				color:#2bff;
+				Font-size:20px;
+				border: 1px solid #fff;
+				padding:12px 34px;
+				background: transparent;
+				position: relative;
+				cursor:pointer;
+}
+.dive:hover{ 
+			border: 1px	 solid #5693ce ;
+			background:#5693ce ;
+			transition: 0.7s;
+}
+.nav i{
+			display:none;	
+}
+
+@media screen and (max-width : 700px )
+{
+				.text h1{
+			font-size:30px;	}
+			.logo{
+ width: 150px;
+		margin: 0px ;
+		}
+
+.menu ul li {
+		display:block;	
+}
+.menu {
+position: absolute;
+background:linear-gradient(rgba(0,113,255,1),rgba(8,173,219,0.6));
+height:100vh;
+width: 250px;
+top:0;
+right:-250px;
+text-align:left;
+z-index:2;		}
+.nav i{
+			display:block;
+			color: #2bff;
+			margin: 10px;
+			font-size: 22px;
+			cursor: pointer;		
+}
+.menu ul {
+			padding: 0px ;
+}
+}
+
+.events{
+			width: 100%;
+			margin: 20px 0px 20px 0px ;
+				padding:20px 0px 30px 0px;
+				text-align:center;
+				color:#2bff;
+				border:200px hidden black;
+				float:center;
+				}
+		
+.events h1{
+font-size:2.5rem;
+font-weight:600 ;	  
+}
+.events p{
+			Font-size: 22px ;	
+			font-weight:300;
+			line-height: 22px;
+}
+.set{
+margin:3%;
+		display:flex;		
+		justify-content: space-between;		
+}
+.ev{
+flex-basis:43%;
+background:#154d7a;
+border-radius:30px;
+margin:1%;
+padding: 20px 12px;
+box-sizing:boreder-box;
+}
+h3{
+	text-align	:center;
+	font-weight:600;
+	margin:10px 0;
+}
+.ev:hover{
+		box-shadow: 0 0 20px 0 rgba( 150, 204, 255,1);
+}
+@media screen and (max-width:700px){
+		.set{
+				flex-direction:column;
+		}		
+}
+
+ }
+  .recent{
+  			width: 50%;
+  			height: 50%;
+  			marign:auto;
+text-align:center;
+padding-top: 50px;
+  }
+  .recent h1{
+  text-align:center;
+  Font-size: 2.5rem;
+  font-weight: 600;
+  color:#2bff;
+}
+  .recent p{
+  text-align:center;
+  Font-size: 22px;
+  font-weight: 300;
+  color:#2bff; 				
+  }
+  .rec{
+  margin-left:70px;
+  	display:flex;
+  	border: 1px hidden blue;
+  	box-sizing:border-box;
+  	padding:0px 0px 70px 0px; }
+.re{
+  position: relative;
+  width: 50%;
+}
+.re img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.layer {
+background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 88%;
+  opacity: 0;
+  transition: .5s;
+  background-color:#80eaff;
+}
+.re:hover .layer {
+  opacity: 0.7;
+}
+.text2{
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  text-align: center;				
+}
+ .re img{
+  				width: 400px; 
+  				height:250px;}
+  				div p{
+  								display:block;
+  								text-align:left; 								
+  				}
+  				.site:hover{
+  								color:#002977
+  				}
+ @media screen and (max-width:700px){
+ .rec{
+ 				margin:20px;
+ }
+ 	.re img{
+								width:350px;
+								height:250px;
+								padding:0px 0px 70px 0px;
+				
+							
+				}
+		.rec{
+				flex-direction:column;
+					}
+				.layer{
+				position: absolute;
+				width:350px;
+				height:250px;	
+				background-size:cover;
+		}		
+		.text2{
+		font-size: 0.8rem;
+		}
+}
+.fac{
+	width:100%;
+			marign	:auto;
+		  text-align:center; 
+			padding-top:100px;		
+}
+.fac h1{
+  text-align:center;
+  Font-size: 2.5rem;
+  font-weight: 600;
+  color:#2bff;
+}
+.fac h3{ 
+			text-align:center;
+  Font-size: 1.5rem;
+  font-weight: 350;
+  color:#2bff;	
+}
+  .fac p{
+  text-align:center;
+  Font-size: 20px;
+  font-weight: 300;
+  color:#2bff; 				
+  }
+.fac-class{
+text-align:center;
+				display:flex;
+				justify-content:space-around;				
+}
+  .fac-cl{
+  margin-top: 5%; 
+     border: 1px hidden black;
+     box-sizing:border-box;
+  				flex-basis:41%;
+  				border-radius:20px;
+  				margin-bottom: 5%;
+  				text-align:left; 				
+  } 
+
+.fac-cl img{
+		width:400px;
+		height:300px;
+		border-radius:20px;	
+		
+}
+html h1 {
+text-align:center;
+				text-shadow: 5px 5px 5px #102bc4;
+				color:#2bff;
+  Font-size: 3.5rem;
+  font-weight: 600;
+ 
+}
+html h2{
+				text-shadow: 5px 5px 5px #4f41c4;
+				color:#2bff;
+		Font-size: 2.5rem;
+  font-weight: 600;		 }
+				html h3{
+				text-shadow: 5px 5px 5px #4f41c4;
+				color:#2bff; 
+	Font-size: 1.5rem;
+  font-weight: 250;			}
+				html p{
+				color:#2bff;
+Font-size: 15px;
+  font-weight: 100;				 }
+				html h5{
+				color:#2bff; 
+  font-weight: 100;				}
+				
+@media screen and (max-width:700px){
+
+
+.fac-class{
+display: flex;
+flex-direction: column;
+margin: 20px
+}	
+.fac-cl img{
+				width: 350px;
+				height: 200px;
+}			
+}
+/* new section */
+.qu{
+				width: 80% ;
+				margin: auto;
+				padding-top: 100px;
+				text-align: center;
+				color:#2bff;
+				
+}
+.qu h1{
+text-align:center;
+  Font-size: 2.5rem;
+  font-weight: 600;
+
+}
+.idk{
+				display:flex; 
+	 flex-direction: row;	
+}
+.lol{
+	
+	flex-basis: 44;
+	 border-radius:10px;
+	 margin:1%;
+	 text-align:left;
+	 background:#0081ff;
+	 padding:10px;
+	 cursor: pointer;	
+	 display:flex; 
+	 flex-direction: row;
+	 
+}
+.lol img{
+				height: 40px;
+		margin-left: 8px;
+margin-right:30px;
+border-radius: 50%;
+}
+qu p{
+				margin-top:15px;
+				text-align:left;
+}
+@media(max-width:700px){
+.idk{
+display:flex; 
+	 flex-direction: column;	
+	 }
+
+	 	.lol img{
+				height: 40px;
+		margin-left: 0px;
+margin-right:15px;
+border-radius: 50%;
+}		 
+}
+.flogo{
+				width: 160px;
+				height:100px;
+}
+.footer{
+				width:100%;
+				text-align: left;
+				color:#2bff;
+				display:flex;}
+				.fdiv{
+								margin-left:30px;
+								padding-right:250px;
+				}
+				.pass{
+				padding-top:50px;
+				margin-right:30px;
+						
+				}
+
+.footer h4{
+margin-bottom: 25px;
+margin-top: 20px;
+				font-weight: 600;
+				
+}
+.lola{
+
+				text-align:center;
+}
+.footer i{
+				margin:10px;
+}
+.footer{
+min-height:10vh;
+width:100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/Users/User/Desktop/folder/Berry T/Astronaut/Images/fBackground.jpg");
+				background-position: center;
+				background-size:cover;
+				position:relative;
+}
+
+@media screen and (max-width:700px){
+			.footer{
+							min-height:10vh;
+width:100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/Users/User/Desktop/folder/Berry T/Astronaut/Images/fBackground.jpg");
+				background-position: center;
+				background-size:cover;
+				position: relative;}
+				.fdiv{
+								margin-left:20px;
+								padding-right:10px;
+				}
+				.pass{
+				padding-top:50px;
+				margin-right:30px;
+}input {
+        resize: horizontal;
+        width: 90px;
+    }
+
+    input:active {
+        width: auto;   
+    }
+
+    input:focus {
+        min-width: 90px;
+    }}
+/*------------ new page-------------+++*/
+
+.h{
+min-height:15vh;
+width:100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/Users/User/Desktop/folder/Berry T/Astronaut/Images/Background.jpg");
+				background-position: center;
+				background-size:cover;
+				position:relative;				
+}
+.h h1{
+
+				text-align: center;
+  Font-size: 3.5rem;
+  font-weight: 600;
+  color:#2bff;
+}
+.h p{
+	text-align: center;
+  Font-size: 17px;
+  font-weight: 200;
+  color:#2bff;	
+  padding:10px;		
+}
+
+.nav2{
+				display:flex;
+				padding-top:25px;
+	
+			/*	flex-direction:row;*/
+				justify-content: space-between;
+				align-items: center;
+				position:relative;
+}
+.logo22{
+		 	display: inline-block;
+			 position :relative; 
+				width: 250px;
+				height:200;
+				float:left;
+}
+.logolink2{
+						width:100%;
+						height: 100%;	}
+		
+		.nav2 i{
+			display:none;	}
+	.	menu2{
+	flex:1;
+	text-align:right;
+					transition:1s;
+					list-style-type:none;
+	}		
+.menu2 ul li {
+display: inline-block;
+list-style:none ;
+padding:0px 0px;
+position: relative;
+margin: 10px;
+}
+
+li {
+
+ display: block;
+    vertical-align: top;
+    padding:10px;
+} 
+
+.menu2 ul li a {
+  color: #2bff;
+  text-decoration: none;
+font-size: 20px;
+font-family: "sofia" ,sans-serif ;
+} 
+.nav2 ul li::after{ 
+content:'';
+			width:0% ;
+			height:2px;
+			background: #1e1580;
+			display:block;
+			margin:auto;
+			transition:0.5s;
+}
+.nav2 ul li:hover::after{
+width:100%;			}
+.text {
+				width:90% ;
+				color:#2bff ;
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%, -40%);
+				text-align: center;
+}
+
+@media screen and (max-width : 700px )
+{
+				.text h1{
+			font-size:30px;	}
+			.logo22{
+ width: 150px;
+		margin-top: 20px ;
+	
+		}
+.h h1{
+font-size: 2.5rem;
+				padding-top:20px;
+}
+.menu2 ul li {
+		display:block;	
+}
+.menu2 {
+position: absolute;
+background:linear-gradient(rgba(0,113,255,1),rgba(8,173,219,0.6));
+height:100vh;
+width: 250px;
+top:0;
+right:-250px;
+text-align:left;
+z-index:2;		}
+.nav2 i{
+			display:block;
+			color: #2bff;
+			margin: 10px;
+			font-size: 22px;
+			cursor: pointer;		
+}
+.menu2 ul {
+			padding: 0px ;
+}}
+.container{
+display:flex;
+				width: 100%;
+				padding: 20px;
+				margin-right:20px;
+				box-sizing: border-size; 
+				border: 1px solid #8098ff;
+				border-radius: 2px;
+				box-shadow: 10px 10px 10px rgba(1,154,171,1) ;
+				}
+   .container img{
+								width:400px;
+								height: 250px;
+								margin-right:20px;	}  
+						
+.container p{
+				color:#2bff;
+Font-size: 15px;
+  font-weight: 100;	 }
+@media screen and (max-width: 700px ){
+					
+	
+.container{
+display:flex;
+flex-direction: column;
+				width:90%;
+				padding: 10px;		
+				margin-right:20px;	
+				flex-wrap	:wrap;
+				align-items: justify;}  
+.container img{
+				width:200px;
+				height:150px; 
+				float:left;
+				flex-wrap:wrap;}
+				}
+  
+
+.footer2{
+		margin-bottom:0px;
+	 margin-top:20px;
+		min-height:40vh;
+width:100%;
+height:100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/Users/User/Desktop/folder/Berry T/Astronaut/Images/fBackground.jpg");
+				background-position: center;
+				background-size:cover;
+				position:relative;
+				vertical-align:bottom;
+}
+p{
+				color:#2bff;
+}
+.abb img{
+float:left;
+width: 400px;
+height:200px;
+padding-right:10px;
+				
+}
+.abb{
+				margin-bottom:20px;
+}
+
+.aboutmee h2{
+margin-top: 20px;
+text-align:center;
+				
+}
+.aboutmet{
+				padding-left:20px;
+				text-align: justify;
+}
+@media screen and (max-width:700px){
+				.abb img{
+float:left;
+width: 250px;
+height:200px;
+padding-right:10px;
+				
+}
